@@ -1,16 +1,19 @@
-//============================================================================
-// Name        : second.cpp
-// Author      : pirozhok
-// Version     :
-// Copyright   : AAAAAAAAAAAAAAA!!!!!!!!
-// Description : Hello World in C++, Ansi-style
-//============================================================================
-
 #include <iostream>
+
 using namespace std;
 
 int main() {
-	cout << "Hello World!!!" << endl; // prints Hello World!!!
-	cout << "hfghfgjfgju!!!" << endl; // prints Hello World!!!
+
+	const unsigned short MINUTE = 60;
+	const unsigned short HOUR = 60;
+	const unsigned short DAY = 24;
+	unsigned long long days;
+
+	cout << "Please, enter number of days to calculate seconds (followed by 'enter'):" << endl;
+
+	cin >> days;
+
+	cout << "result is: " << days * MINUTE * HOUR * DAY << "!\n";
+
 	return 0;
 }
