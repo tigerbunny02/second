@@ -1,19 +1,31 @@
+/*
+ * Here the comment section
+ * Happy debugging, suckers!
+ */
 #include <iostream>
 
 using namespace std;
 
-int main() {
+int main()
+{
+	int a, b, sum = 0;
 
-	const unsigned short MINUTE = 60;
-	const unsigned short HOUR = 60;
-	const unsigned short DAY = 24;
-	unsigned long long days;
 
-	cout << "Please, enter number of days to calculate seconds (followed by 'enter'):" << endl;
+	cout << "Enter beginning and end of the range." << endl;
+	cin >> a >> b;
 
-	cin >> days;
+	while (a <= b)
+	{
+		if (a%2 == 1)
+		{
+			sum += a;
+		}
 
-	cout << "result is: " << days * MINUTE * HOUR * DAY << "!\n";
+		a++;
+
+	}
+	cout << "Result is " << sum << endl;
+
 
 	return 0;
 }
